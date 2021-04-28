@@ -1,13 +1,9 @@
 # Singularity RStudio Server
 
-[![Build Status](https://travis-ci.org/nickjer/singularity-rstudio.svg?branch=master)](https://travis-ci.org/nickjer/singularity-rstudio)
-[![Singularity Hub](https://www.singularity-hub.org/static/img/hosted-singularity--hub-%23e32929.svg)](https://singularity-hub.org/collections/463)
-[![GitHub License](https://img.shields.io/badge/license-MIT-green.svg)](https://opensource.org/licenses/MIT)
-
 Singularity image for [RStudio Server]. It was built on top of the base
-Singularity image [nickjer/singularity-r].
+Singularity image [holtgrewe/singularity-r].
 
-This is still a work in progress.
+Based on nickjer/singularity-rstudio.
 
 ## Build
 
@@ -15,15 +11,6 @@ You can build a local Singularity image named `singularity-rstudio.simg` with:
 
 ```sh
 sudo singularity build singularity-rstudio.simg Singularity
-```
-
-## Deploy
-
-Instead of building it yourself you can download the pre-built image from
-[Singularity Hub](https://www.singularity-hub.org) with:
-
-```sh
-singularity pull --name singularity-rstudio.simg shub://nickjer/singularity-rstudio
 ```
 
 ## Run
@@ -122,7 +109,7 @@ the host's path).
 
 ### R and Rscript
 
-See [nickjer/singularity-r] for more information on how to run `R` and
+See [holtgrewe/singularity-r] for more information on how to run `R` and
 `Rscript` from within this Singularity image.
 
 ## Contributing
@@ -134,7 +121,6 @@ https://github.com/nickjer/singularity-rstudio.
 
 The code is available as open source under the terms of the [MIT License].
 
-
 [RStudio Server]: https://www.rstudio.com/products/rstudio/
-[nickjer/singularity-r]: https://github.com/nickjer/singularity-r
+[holtgrewe/singularity-r]: https://github.com/bihealth/singularity-r
 [MIT License]: http://opensource.org/licenses/MIT
